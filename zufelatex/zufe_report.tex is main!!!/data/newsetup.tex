@@ -1,0 +1,138 @@
+\RequirePackage{CJKnumb}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.0}
+%页面大小
+\usepackage{geometry}
+%首航缩进
+\usepackage{indentfirst}
+%各种下划线
+\usepackage{ulem}
+%加载图片
+\usepackage{graphicx} 
+%加载公式
+\usepackage{amsmath}
+\usepackage{amsthm}
+%调整行间距
+\usepackage{setspace}
+%处理数学公式中和黑斜体
+\usepackage{latexsym,bm}
+%定义书写公式环境
+\usepackage{cases}
+%一些特殊符号例如：※√
+\usepackage{pifont}
+%文本和数学字符库
+\usepackage{txfonts}
+%手动设置行距
+\usepackage{setspace}
+%%%%%%%%%%% CJK下设置中文字体 %%%%%%%%%%%%%
+\newcommand{\song}{\CJKfamily{song}}    % 宋体   (Windows自带simsun.ttf)
+\newcommand{\fs}{\CJKfamily{fs}}        % 仿宋体 (Windows自带simfs.ttf)
+\newcommand{\kai}{\CJKfamily{kai}}      % 楷体   (Windows自带simkai.ttf)
+\newcommand{\hei}{\CJKfamily{hei}}      % 黑体   (Windows自带simhei.ttf)
+\newcommand{\li}{\CJKfamily{li}}        % 隶书   (Windows自带simli.ttf)
+
+%%%%%%%%%%%  设置字体大小 ，拼音代表字号%%%%%%%%%%%%%
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont}
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
+%三线表
+\usepackage{threeparttable}
+
+% 表格中支持跨行
+\usepackage{multirow}
+
+% 固定宽度的表格。
+\usepackage{tabularx}
+
+% 跨页表格
+\usepackage{longtable}
+
+%给字母加粗
+\usepackage[T1]{fontenc}
+
+% 量和单位
+\usepackage{siunitx}
+
+%三线表
+\usepackage{booktabs}
+
+%调用子图
+\usepackage{subfigure}
+%页眉页脚
+\usepackage{fancyhdr}
+
+
+% 定义所有的图片文件在 figures 子目录下
+\graphicspath{{figures/}}
+\newtheorem{theorem}{定理}
+\usepackage{upgreek}
+% 数学命令
+\makeatletter
+\newcommand\dif{%  % 微分符号
+	\mathop{}\!%
+	\ifthu@math@style@TeX
+	d%
+	\else
+	\mathrm{d}%
+	\fi
+}
+\makeatother
+
+%新罗马字体
+\newcommand{\romann}{\CJKfontspec{TIMES.TTF}\selectfont}
+%中英文摘要
+\newcommand{\enabstractname}{}
+\newcommand{\cnabstractname}{}
+\newenvironment{enabstract}{%
+	\par\small
+	\noindent\mbox{}\hfill{\bfseries\enabstractname}\hfill\mbox{}\par
+	\vskip 2.5ex}{\par\vskip2.5ex}
+\newenvironment{cnabstract}{%
+	\par\small
+	\noindent\mbox{}\hfill{\bfseries\cnabstractname}\hfill\mbox{}\par
+	\vskip 2.5ex}{\par\vskip2.5ex}
+{\tiny {\tiny }}
+\usepackage{titletoc}
+%目录加点
+\usepackage[subfigure]{tocloft}      %必须这么写，否则会报错
+%设置chapter条目的引导点间距
+\renewcommand{\cftpartleader}{\cftdotfill{0.0001}}
+\renewcommand{\cftsecleader}{\cftdotfill{0.0001}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{0.0001}}
+%目录加点
+\usepackage[subfigure]{tocloft}      %必须这么写，否则会报错
+%设置chapter条目的引导点间距
+\renewcommand{\cftpartleader}{\cftdotfill{0.0001}}
+\renewcommand{\cftsecleader}{\cftdotfill{0.0001}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{0.0001}}
+
+%设置目录格式
+\usepackage{titletoc}
+\titlecontents{part}[4em]
+{\heiti\zihao{4}}
+{\contentslabel{4em}}
+{\hspace*{-4em}}
+{\titlerule*[5pt]{.}\contentspage}
+[\addvspace{0pt}]
+
+\titlecontents{section}[2.5em]
+{\vspace*{0ex}\songti\zihao{-4}}
+{\contentslabel[\thecontentslabel]{2em}}
+{\hspace*{-1em}}
+{\titlerule*[5pt]{.}\contentspage}
+[\addvspace{0ex}]
+
+\titlecontents{subsection}[5.0em]
+{\vspace*{1ex}\songti\zihao{-4}}
+{\contentslabel[\thecontentslabel]{3.0em}}
+{}
+{\titlerule*[5pt]{.}\contentspage}
+[\addvspace{0pt}]
+
+\titlecontents{subsubsection}[5.0em]
+{\vspace*{1ex}\songti\zihao{-4}}
+{\contentslabel[\thecontentslabel]{3.0em}}
+{}
+{\titlerule*[5pt]{.}\contentspage}
+[\addvspace{0pt}]
