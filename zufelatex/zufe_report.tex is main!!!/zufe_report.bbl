@@ -1,0 +1,384 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{GB/T16159—1996}{standard}{}
+      \list{language}{1}{%
+        {zh}%
+      }
+      \list{location}{1}{%
+        {北京}%
+      }
+      \list{publisher}{1}{%
+        {中国标准出版社}%
+      }
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeltitlesource}{title}
+      \field{title}{GB/T 16159—1996. 汉语拼音正词法基本规则}
+      \field{year}{1996}
+      \keyw{standard}
+    \endentry
+    \entry{Raymer1992Aircraft}{book}{}
+      \name{author}{2}{}{%
+        {{hash=578f2532c9ec5b88a550b0c24ee8b3a7}{%
+           family={Raymer},
+           familyi={R\bibinitperiod}}}%
+        {{hash=9b61d50c62bd6bc2da0cd63ef2b10b01}{%
+           family={DanielP},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Reston, Virginia}%
+      }
+      \list{publisher}{2}{%
+        {American Institute of Aeronautics}%
+        {Astronautics}%
+      }
+      \strng{namehash}{bcef5fc0e03f7cfe5bf32971fa60cbeb}
+      \strng{fullhash}{bcef5fc0e03f7cfe5bf32971fa60cbeb}
+      \strng{bibnamehash}{bcef5fc0e03f7cfe5bf32971fa60cbeb}
+      \strng{authorbibnamehash}{bcef5fc0e03f7cfe5bf32971fa60cbeb}
+      \strng{authornamehash}{bcef5fc0e03f7cfe5bf32971fa60cbeb}
+      \strng{authorfullhash}{bcef5fc0e03f7cfe5bf32971fa60cbeb}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Aircraft design: A Conceptual Approach}
+      \field{year}{1992}
+      \keyw{book}
+    \endentry
+    \entry{Sobieski}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=7d7d56fcdb2c6b37bb23e896285c922d}{%
+           family={Sobieski},
+           familyi={S\bibinitperiod},
+           given={I.\bibnamedelimi P.},
+           giveni={I\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Stanford University}%
+      }
+      \list{location}{1}{%
+        {United States -- California}%
+      }
+      \strng{namehash}{7d7d56fcdb2c6b37bb23e896285c922d}
+      \strng{fullhash}{7d7d56fcdb2c6b37bb23e896285c922d}
+      \strng{bibnamehash}{7d7d56fcdb2c6b37bb23e896285c922d}
+      \strng{authorbibnamehash}{7d7d56fcdb2c6b37bb23e896285c922d}
+      \strng{authornamehash}{7d7d56fcdb2c6b37bb23e896285c922d}
+      \strng{authorfullhash}{7d7d56fcdb2c6b37bb23e896285c922d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Multidisciplinary Design Using Collaborative Optimization}
+      \field{type}{phdthesis}
+      \field{year}{1998}
+      \keyw{thesis}
+    \endentry
+    \entry{Sobieszczanski}{report}{}
+      \name{author}{1}{}{%
+        {{hash=b85f92915df45d45d9a700b219f0f8ef}{%
+           family={Sobieszczanski-Sobieski},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {NASA CP-3031}%
+      }
+      \strng{namehash}{b85f92915df45d45d9a700b219f0f8ef}
+      \strng{fullhash}{b85f92915df45d45d9a700b219f0f8ef}
+      \strng{bibnamehash}{b85f92915df45d45d9a700b219f0f8ef}
+      \strng{authorbibnamehash}{b85f92915df45d45d9a700b219f0f8ef}
+      \strng{authornamehash}{b85f92915df45d45d9a700b219f0f8ef}
+      \strng{authorfullhash}{b85f92915df45d45d9a700b219f0f8ef}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optimization by Decomposition: A Step from Hierarchic to Non-Hierarchic Systems}
+      \field{type}{techreport}
+      \field{year}{1989}
+      \keyw{techreport}
+    \endentry
+    \entry{fengxiqiao}{report}{}
+      \name{author}{1}{}{%
+        {{hash=0b6e22730bd5a0ce81b2c4a5e48819a5}{%
+           family={冯西桥},
+           familyi={冯\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {清华大学核能技术设计研究院}%
+      }
+      \list{language}{1}{%
+        {zh}%
+      }
+      \list{location}{1}{%
+        {北京}%
+      }
+      \strng{namehash}{0b6e22730bd5a0ce81b2c4a5e48819a5}
+      \strng{fullhash}{0b6e22730bd5a0ce81b2c4a5e48819a5}
+      \strng{bibnamehash}{0b6e22730bd5a0ce81b2c4a5e48819a5}
+      \strng{authorbibnamehash}{0b6e22730bd5a0ce81b2c4a5e48819a5}
+      \strng{authornamehash}{0b6e22730bd5a0ce81b2c4a5e48819a5}
+      \strng{authorfullhash}{0b6e22730bd5a0ce81b2c4a5e48819a5}
+      \field{sortinit}{冯}
+      \field{sortinithash}{bf7d78f11ed3c2d0348f1273f5a607a4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{核反应堆压力容器的LBB分析}
+      \field{type}{techreport}
+      \field{year}{1997}
+      \keyw{techreport}
+    \endentry
+    \entry{yaoboyuan}{online}{}
+      \name{author}{1}{}{%
+        {{hash=530a873f9ceb75802f39d6414228d6cf}{%
+           family={姚伯元},
+           familyi={姚\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {中国高等教育网教学研究}%
+      }
+      \strng{namehash}{530a873f9ceb75802f39d6414228d6cf}
+      \strng{fullhash}{530a873f9ceb75802f39d6414228d6cf}
+      \strng{bibnamehash}{530a873f9ceb75802f39d6414228d6cf}
+      \strng{authorbibnamehash}{530a873f9ceb75802f39d6414228d6cf}
+      \strng{authornamehash}{530a873f9ceb75802f39d6414228d6cf}
+      \strng{authorfullhash}{530a873f9ceb75802f39d6414228d6cf}
+      \field{sortinit}{姚}
+      \field{sortinithash}{8e7f020d80e84de6d1d0aa41e16b5580}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{毕业设计(论文)规范化管理与培养学生综合素质}
+      \field{urlday}{26}
+      \field{urlmonth}{3}
+      \field{urlyear}{2013}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.cnnic.net.cn/hlwfzyj/hlwxzbg/201201/P020120709345264469680
+      \endverb
+      \verb{url}
+      \verb http://www.cnnic.net.cn/hlwfzyj/hlwxzbg/201201/P020120709345264469680
+      \endverb
+      \keyw{online}
+      \warn{\item online entry 'yaoboyuan' (Reference.bib): Invalid format '2005-2-2' of date field 'date' - ignoring}
+    \endentry
+    \entry{jiangxizhou}{patent}{}
+      \name{author}{1}{}{%
+        {{hash=9ae43bbc6bdaffd3c534e59c40a86698}{%
+           family={姜锡洲},
+           familyi={姜\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {中国}%
+      }
+      \strng{namehash}{9ae43bbc6bdaffd3c534e59c40a86698}
+      \strng{fullhash}{9ae43bbc6bdaffd3c534e59c40a86698}
+      \strng{bibnamehash}{9ae43bbc6bdaffd3c534e59c40a86698}
+      \strng{authorbibnamehash}{9ae43bbc6bdaffd3c534e59c40a86698}
+      \strng{authornamehash}{9ae43bbc6bdaffd3c534e59c40a86698}
+      \strng{authorfullhash}{9ae43bbc6bdaffd3c534e59c40a86698}
+      \field{sortinit}{姜}
+      \field{sortinithash}{d888f007d623af344384611718e94015}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{7}
+      \field{number}{88105607}
+      \field{title}{一种温热外敷药制备方案}
+      \field{year}{1989}
+      \field{dateera}{ce}
+    \endentry
+    \entry{sunpinyi}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=4dd3298626a2f8a07b9a991a920059a2}{%
+           family={孙品一},
+           familyi={孙\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=e4a4c19378d56a75047fb1530a1bdb41}{%
+           family={张为民},
+           familyi={张\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {北京}%
+      }
+      \list{publisher}{1}{%
+        {北京师范大学出版社}%
+      }
+      \strng{namehash}{4dd3298626a2f8a07b9a991a920059a2}
+      \strng{fullhash}{4dd3298626a2f8a07b9a991a920059a2}
+      \strng{bibnamehash}{4dd3298626a2f8a07b9a991a920059a2}
+      \strng{authorbibnamehash}{4dd3298626a2f8a07b9a991a920059a2}
+      \strng{authornamehash}{4dd3298626a2f8a07b9a991a920059a2}
+      \strng{authorfullhash}{4dd3298626a2f8a07b9a991a920059a2}
+      \strng{editorbibnamehash}{e4a4c19378d56a75047fb1530a1bdb41}
+      \strng{editornamehash}{e4a4c19378d56a75047fb1530a1bdb41}
+      \strng{editorfullhash}{e4a4c19378d56a75047fb1530a1bdb41}
+      \field{sortinit}{孙}
+      \field{sortinithash}{99428039d9b9f2b6e012780cd7c60a0a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{中国高等学校自然科学学报研究会. 科技编辑学论文集(2)}
+      \field{title}{高校学报编辑工作现代化特征}
+      \field{year}{1998}
+      \field{pages}{10\bibrangedash 22}
+      \range{pages}{13}
+    \endentry
+    \entry{zhanghesheng}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=c5d5027c923537c57d6adaff8fc32cdc}{%
+           family={张和生},
+           familyi={张\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {北京理工大学}%
+      }
+      \list{language}{1}{%
+        {zh}%
+      }
+      \list{location}{1}{%
+        {北京}%
+      }
+      \strng{namehash}{c5d5027c923537c57d6adaff8fc32cdc}
+      \strng{fullhash}{c5d5027c923537c57d6adaff8fc32cdc}
+      \strng{bibnamehash}{c5d5027c923537c57d6adaff8fc32cdc}
+      \strng{authorbibnamehash}{c5d5027c923537c57d6adaff8fc32cdc}
+      \strng{authornamehash}{c5d5027c923537c57d6adaff8fc32cdc}
+      \strng{authorfullhash}{c5d5027c923537c57d6adaff8fc32cdc}
+      \field{sortinit}{张}
+      \field{sortinithash}{5224dd6ea8d67d595848333a2165db73}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{嵌入式单片机系统设计}
+      \field{type}{phdthesis}
+      \field{year}{1998}
+      \keyw{thesis}
+    \endentry
+    \entry{李成智2004飞行之梦}{book}{}
+      \name{author}{3}{}{%
+        {{hash=2b64103f2e304163b1e5510880b7176f}{%
+           family={李成智},
+           familyi={李\bibinitperiod}}}%
+        {{hash=13a5f04760dc5b1655b0ba1bee656100}{%
+           family={李小宁},
+           familyi={李\bibinitperiod}}}%
+        {{hash=ad4541339aa8c1e96e7ab4d6ae21fa25}{%
+           family={田大山},
+           familyi={田\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {zh}%
+      }
+      \list{location}{1}{%
+        {北京}%
+      }
+      \list{publisher}{1}{%
+        {北京航空航天大学}%
+      }
+      \strng{namehash}{c8841e1f9ccb50fbe740b17304e11bfe}
+      \strng{fullhash}{c8841e1f9ccb50fbe740b17304e11bfe}
+      \strng{bibnamehash}{c8841e1f9ccb50fbe740b17304e11bfe}
+      \strng{authorbibnamehash}{c8841e1f9ccb50fbe740b17304e11bfe}
+      \strng{authornamehash}{c8841e1f9ccb50fbe740b17304e11bfe}
+      \strng{authorfullhash}{c8841e1f9ccb50fbe740b17304e11bfe}
+      \field{sortinit}{李}
+      \field{sortinithash}{87a9fd4641bb616da89b0f1e084fa281}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{飞行之梦:航空航天发展史概论}
+      \field{year}{2004}
+      \keyw{book}
+    \endentry
+    \entry{luoyun}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=b808ca3fba9b111a3ff20f662e664fac}{%
+           family={罗云},
+           familyi={罗\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=f3dffd0a406dc9fdfcaa02959e145244}{%
+           family={白春华},
+           familyi={白\bibinitperiod}}}%
+        {{hash=bcb4024cb64128f33c1d8e460863fae8}{%
+           family={何学秋},
+           familyi={何\bibinitperiod}}}%
+        {{hash=586ed583157645f42bad8d3beb29b02f}{%
+           family={吴宗之},
+           familyi={吴\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {北京}%
+      }
+      \list{publisher}{1}{%
+        {科学出版社}%
+      }
+      \strng{namehash}{b808ca3fba9b111a3ff20f662e664fac}
+      \strng{fullhash}{b808ca3fba9b111a3ff20f662e664fac}
+      \strng{bibnamehash}{b808ca3fba9b111a3ff20f662e664fac}
+      \strng{authorbibnamehash}{b808ca3fba9b111a3ff20f662e664fac}
+      \strng{authornamehash}{b808ca3fba9b111a3ff20f662e664fac}
+      \strng{authorfullhash}{b808ca3fba9b111a3ff20f662e664fac}
+      \strng{editorbibnamehash}{6cc4696c0ac3f4e404b5adb5517cf77a}
+      \strng{editornamehash}{6cc4696c0ac3f4e404b5adb5517cf77a}
+      \strng{editorfullhash}{6cc4696c0ac3f4e404b5adb5517cf77a}
+      \field{sortinit}{罗}
+      \field{sortinithash}{4e12d1e47e5aaef74cd27ce7b14f9abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{21世纪安全科学与技术的发展趋势}
+      \field{title}{安全科学理论体系的发展及趋势探讨}
+      \field{year}{2000}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+    \endentry
+    \entry{xiexide}{newspaper}{}
+      \name{author}{1}{}{%
+        {{hash=e0a307fa53ff994c1571c769d4268093}{%
+           family={谢希德},
+           familyi={谢\bibinitperiod}}}%
+      }
+      \strng{namehash}{e0a307fa53ff994c1571c769d4268093}
+      \strng{fullhash}{e0a307fa53ff994c1571c769d4268093}
+      \strng{bibnamehash}{e0a307fa53ff994c1571c769d4268093}
+      \strng{authorbibnamehash}{e0a307fa53ff994c1571c769d4268093}
+      \strng{authornamehash}{e0a307fa53ff994c1571c769d4268093}
+      \strng{authorfullhash}{e0a307fa53ff994c1571c769d4268093}
+      \field{sortinit}{谢}
+      \field{sortinithash}{8a0cd28601859eb0d25d21c868f9fdf6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{journaltitle}{人民日报}
+      \field{month}{12}
+      \field{number}{10}
+      \field{title}{创造学习的思路}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \keyw{newspaper}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
