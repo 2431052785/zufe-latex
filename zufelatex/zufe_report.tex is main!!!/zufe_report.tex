@@ -1,0 +1,95 @@
+\documentclass[bachelor]{zufe}
+\input{data/zufesetup}
+\addbibresource{Reference.bib}
+
+% % 使用中文编译 + XeLatex
+% \usepackage[fontset=ubuntu]{ctex}
+
+% 基本信息--------------------------------------------------------------------------------
+% 在这里填写你的论文中文题目
+\newcommand{\thesisTitle}{海岛环境对武学宗师成长的影响机理}
+% 在这里填写你的论文英文题目
+\newcommand{\thesisTitleEN}{Influence mechanism of island environment on the growth of martial arts masters}
+
+% 若有副标题，则运行下一行的代码，若无副标题，则将下一行注释掉（在\haveSub{}最前面添加 % 号）
+\haveSub{}
+
+% 在这里填写你的论文中文副标题（没有只需注释掉\haveSub{}即可）
+\newcommand{\thesisSubTitle}{基于桃花岛武学流派的研究}
+% 在这里填写你的论文英文副标题（没有只需注释掉\haveSub{}即可）
+\newcommand{\thesisSubTitleEN}{Research Based on Taohua island martial arts school}
+
+% 在这里填写你的相关信息
+\newcommand{\deptName}{信息管理与人工智能学院}
+\newcommand{\majorName}{人工智能}
+%如果是生僻字例如:垚,则需要在使用\MyFont{}将生僻字括起来，这里用的是宋体，详细可见data文件夹下的zufesetup的第五行
+\newcommand{\yourName}{\MyFont{王垚垚}}
+\newcommand{\yourStudentID}{210110900xxx}
+\newcommand{\mentorName}{吴XX}
+\newcommand{\className}{人工智能1班}
+\newcommand{\Today}{2024年4月}
+% 基本信息--------------------------------------------------------------------------------
+
+% 文档开始
+\begin{document}
+	
+	% 封面，没有特殊情况不需要修改
+	\input{misc/0_cover}
+	
+	% 前置页面定义
+	\frontmatter
+	% 原创性声明，没有特殊情况不需要修改
+	\input{misc/1_originality}
+	
+	% 摘要（中英文）：根据自身论文，修改摘要的Tex文件
+	\input{data/abstract}
+	%是否需要换页自己判断
+	\newpage
+	
+	% 目录,自动生成，没有特殊情况不需要修改
+	\input{misc/2_contents}
+
+	% 正文开始
+	\mainmatter
+	% 正文 22 磅的行距
+	\setlength{\parskip}{0em}
+	\renewcommand{\baselinestretch}{1.53}
+	
+	% 修复脚注出现跨页的问题
+	\interfootnotelinepenalty=10000
+	
+	% 引言，根据自身论文，修改引言的Tex文件
+	\input{misc/3_introduction}
+	\newpage
+	
+	% 章节模板，成文后将其注释掉即可
+	\input{chapters/chapter_sample}
+	\newpage
+	
+	% 在此插入章节
+	% 第一章
+	\input{chapters/chapter_1}
+	\newpage
+	
+	% 第二章，第三章······
+	\input{chapters/chap02}
+	\newpage
+	
+	% 结论：根据自身论文，修改结论的Tex文件
+	\input{misc/4_conclusion}
+	\newpage
+	
+	% 参考文献，无特殊要求不需要修改
+	% 添加参考文献请使用 BibTex 格式，添加至reference.bib 中，并在正文中使用 \cite{xxx}
+	% 成文后将\input{misc/5_reference}注释掉即可，这个只是告诉你参考文献的类别以及规范
+	\input{misc/5_reference}
+	\input{misc/5_simple_reference}
+	\newpage
+	
+	% 附录：根据自身论文，修改附录的Tex文件（补充论文，不是必须）
+	\input{misc/6_appendix}
+	\newpage
+
+	% 致谢：根据自身要求，修改致谢的Tex文件
+	\input{misc/7_acknowledgement}
+\end{document}
