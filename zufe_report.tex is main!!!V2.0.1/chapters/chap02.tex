@@ -1,0 +1,43 @@
+
+\setlength{\baselineskip}{20pt}
+\chapter{图片使用}
+\section{插图} % 一级标题
+
+图片通常在 figure 环境中使用 includegraphics 插入，如图~\ref{fig:example} 的源代码。
+建议矢量图片使用 PDF 格式，比如数据可视化的绘图；
+照片应使用 JPG 格式；
+其他的栅格图应使用无损的 PNG 格式。
+注意，LaTeX 不支持 TIFF 格式；EPS 格式已经过时。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\linewidth]{example-image-a.pdf}
+	%	 国外的期刊习惯将图表的标题和说明文字写成一段，需要改写为标题只含图表的名称，其他说明文字以注释方式写在图表下方，或者写在正文中。
+	%	 这里将说明文字作为注释添加
+	\caption{示例图片标题} % 图片标题
+	\label{fig:example} % 图片标签
+\end{figure}
+
+若图或表中有附注，采用英文小写字母顺序编号，附注写在图或表的下方。
+
+如果一个图由两个或两个以上分图组成时，各分图分别以 (a)、(b)、(c)...... 作为图序，并须有分图题。
+推荐使用 subcaption 宏包来处理， 比如图~\ref{fig:subfig-a} 和图~\ref{fig:subfig-b}。
+
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}{0.44\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{example-image-a.pdf}
+		\caption{分图 A}
+		\label{fig:subfig-a}
+	\end{minipage}
+	\centering
+	\begin{minipage}{0.44\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{example-image-b.pdf}
+		\caption{分图 B}
+		\label{fig:subfig-b}
+	\end{minipage}
+	\caption{多个分图的示例}
+	\label{fig:multi-image}
+\end{figure}
