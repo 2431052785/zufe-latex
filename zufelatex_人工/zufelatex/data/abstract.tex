@@ -1,0 +1,69 @@
+
+% 下面是中文摘要 3-19行不用管
+\begin{center}
+	\heiti\zihao{3}\textmd{\thesisname}
+	\vspace{2mm}
+	\ifx\subtitle\undefined\else
+	%如果有副标题
+	\begin{spacing}{1.2}
+		\sanhao\selectfont{\textmd{\kaishu{-----}\subtitle}}
+	\end{spacing}
+	\fi
+\end{center}
+%题目后空一行
+\vspace{1em}
+
+\setstretch{1.53}
+\setlength{\parskip}{0em}
+
+\textbf{\heiti\xiaosi{摘要：}}
+%中文摘要----------------------------------------------------------
+论文的摘要是对论文研究内容和成果的高度概括。
+摘要应对论文所研究的问题及其研究目的进行描述，对研究方法和过程进行简单介绍，对研究成果和所得结论进行概括。
+摘要应具有独立性和自明性，其内容应包含与论文全文同等量的主要信息。
+使读者即使不阅读全文，通过摘要就能了解论文的总体内容和主要成果。
+\par
+论文摘要的书写应力求精确、简明。
+切忌写成对论文书写内容进行提要的形式，尤其要避免“第 1 章……；第 2 章……；……”这种或类似的陈述方式。
+\par
+关键词是为了文献标引工作、用以表示全文主要内容信息的单词或术语。关键词不超过 5 个，每个关键词中间用分号分隔。
+\par
+\vspace{1em}
+\textbf{\heiti\xiaosi{关键词：}}
+%这里写你的关键词------------------------------------------------------
+关键词1；关键词2；……
+\vspace{15mm}
+%如果没有英文标题，跳过
+\ifx\enthesisname\undefined\else
+%下面是英文摘要 37-52行不用管
+\begin{spacing}{0.95}
+	\centering
+	\sanhao\textbf{\rmfamily{\enthesisname}}
+	\vspace{2mm}
+	\ifx\subtitle\undefined\else
+	%如果有副标题
+	\begin{spacing}{1.2}
+		\sihao\selectfont{\textmd{\kaishu{-----}\rmfamily\textbf{\ensubtitle}}}
+	\end{spacing}
+	\fi
+\end{spacing}
+\vspace{0em}
+\setstretch{1.53}
+\setlength{\parskip}{0em}
+
+\textbf{\rmfamily\xiaosi{Abstract: }}
+% 英文摘要正文从这里开始--------------------------------------------------
+An abstract of a dissertation is a summary and extraction of research work and contributions.
+Included in an abstract should be description of research topic and research objective, brief introduction to methodology and research process, and summary of conclusion and contributions of the research.
+An abstract should be characterized by independence and clarity and carry identical information with the dissertation.
+It should be such that the general idea and major contributions of the dissertation are conveyed without reading the dissertation.
+\par
+An abstract should be concise and to the point.
+It is a misunderstanding to make an abstract an outline of the dissertation and words “the first chapter”, “the second chapter” and the like should be avoided in the abstract.
+\par
+
+\vspace{1em}
+\textbf{\rmfamily\xiaosi{Key words:}}
+%这里写你的英文关键词----------------------------------------------------
+keywords1;keywords2;...
+\fi
