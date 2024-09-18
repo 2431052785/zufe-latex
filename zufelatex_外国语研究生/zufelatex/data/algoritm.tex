@@ -1,0 +1,125 @@
+\chapter{表格与算法}
+
+\section{表格}
+自动生成LaTeX表工具: \url{https://www.tablesgenerator.com/}
+\par
+表应具有自明性。为使表格简洁易读，尽可能采用三线表，如表~\ref{tab:three-line}。
+三条线可以使用 booktabs 宏包提供的命令生成。
+
+\begin{table}[htbp]
+	\centering
+	\caption{三线表示例}
+	\begin{tabular}{ll}
+		\toprule
+		文件名          & 描述                         \\
+		\midrule
+		zufereport.dtx   & 模板的源文件，包括文档和注释 \\
+		zufereport.cls   & 模板文件                     \\
+		zufereport-*.bst & BibTeX 参考文献表样式文件    \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:three-line}
+\end{table}
+
+表格如果有附注，尤其是需要在表格中进行标注时，可以使用 threeparttable 宏包。
+研究生要求使用英文小写字母 a、b、c……顺序编号，本科生使用圈码 ①、②、③……编号。
+
+\begin{table}[htbp]
+	\centering
+	\begin{threeparttable}[c]
+		\caption{带附注的表格示例}
+		\label{tab:three-part-table}
+		\begin{tabular}{ll}
+			\toprule
+			文件名                 & 描述                         \\
+			\midrule
+			zufereport.dtx\tnote{a} & 模板的源文件，包括文档和注释 \\
+			zufereport.cls\tnote{b} & 模板文件                     \\
+			zufereport-*.bst        & BibTeX 参考文献表样式文件    \\
+			\bottomrule
+		\end{tabular}
+		\begin{tablenotes}
+			\item [a] 可以通过 xelatex 编译生成模板的使用说明文档；
+			使用 xetex 编译 \file{zufereport.ins} 时则会从 \file{.dtx} 中去除掉文档和注释，得到精简的 \file{.cls} 文件。
+			\item [b] 更新模板时，一定要记得编译生成 \file{.cls} 文件，否则编译论文时载入的依然是旧版的模板。
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+如某个表需要转页接排，可以使用 $longtable$ 宏包，需要在随后的各页上重复表的编号。
+编号后跟表题（可省略）和“（续）”，置于表上方。续表均应重复表头。
+
+\singlespacing
+\begin{longtable}{cccc}
+	\caption{跨页长表格的表题}
+	\label{tab:longtable} \\
+	\toprule
+	表头 1 & 表头 2 & 表头 3 & 表头 4 \\
+	\midrule
+	\endfirsthead
+	\caption*{续表~\thetable\quad 跨页长表格的表题} \\
+	\toprule
+	表头 1 & 表头 2 & 表头 3 & 表头 4 \\
+	\midrule
+	\endhead
+	\bottomrule
+	\endfoot
+	Row 1  & & & \\
+	Row 2  & & & \\
+	Row 3  & & & \\
+	Row 4  & & & \\
+	Row 5  & & & \\
+	Row 6  & & & \\
+	Row 7  & & & \\
+	Row 8  & & & \\
+	Row 9  & & & \\
+	Row 10 & & & \\
+\end{longtable}
+
+
+\section{伪代码}
+
+
+算法环境可以使用 algorithms 或者 algorithm2e 宏包。
+
+\renewcommand{\algorithmicrequire}{\textbf{Input：}\unskip}
+\renewcommand{\algorithmicensure}{\textbf{Output：}\unskip}
+\begin{breakablealgorithm}
+	\caption{QuickSort 示例}
+	\begin{algorithmic}[1] % 每行显示行号
+		\Require $Array$数组，$n$数组大小
+		\Ensure 排序后的数组
+		\Function{QuickSort}{$Array, left, right$}
+		\If {$left < right$}
+		\State $pivot \gets$ \Call{Partition}{$Array, left, right$}
+		\State \Call{QuickSort}{$Array, left, pivot-1$}
+		\State \Call{QuickSort}{$Array, pivot+1, right$}
+		\EndIf
+		\EndFunction
+		\State
+		\Function{Partition}{$Array, left, right$}
+		\State $pivot \gets Array[right]$
+		\State $i \gets left-1$
+		\For{$j \gets left$ \textbf{to} $right-1$}
+		\If{$Array[j] < pivot$}
+		\State $i \gets i+1$
+		\State \Call{Swap}{$Array[i], Array[j]$}
+		\EndIf
+		\EndFor
+		\State \Call{Swap}{$Array[i+1], Array[right]}$
+		\State \Return{$i+1$}
+		\EndFunction
+		\State
+		\Function{Swap}{$a, b$}
+		\State $temp \gets a$
+		\State $a \gets b$
+		\State $b \gets temp$
+		\EndFunction
+	\end{algorithmic}
+
+\end{breakablealgorithm}
+
+\section{代码示例}
+\lstinputlisting[style=C++, caption={示例 C++ 代码}, label={lst:cpp}]{Codes/test2.cpp}
+\lstinputlisting[style=Python,caption={示例 Python 代码},label={lst:py}]{Codes/decision_tree.py}
+\lstinputlisting[style=Java,caption={示例 Java 代码},label={lst:java}]{Codes/test.java}
