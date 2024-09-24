@@ -1,0 +1,110 @@
+\RequirePackage{CJKnumb}
+
+\usepackage{setspace} % 用于设置行间距
+%首航缩进
+\usepackage{indentfirst}
+%各种下划线和url
+\usepackage{hyperref}
+\usepackage{ulem}
+% 图表设置
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{appendix}
+\usepackage{lipsum}
+%数学相关包
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode} % 使用 algpseudocode 包提供的接口
+% 自定义跨页算法环境
+\makeatletter
+\newenvironment{breakablealgorithm}
+{% \begin{breakablealgorithm}
+		\begin{center}
+			\refstepcounter{algorithm}% New algorithm
+			\hrule height.8pt depth0pt \kern2pt% \@fs@pre for \@fs@ruled
+			\renewcommand{\caption}[2][\relax]{% Make a new \caption
+				{\raggedright\textbf{\textbf{Algorithm}~\thealgorithm} ##2\par}%
+				\ifx\relax##1\relax % #1 is \relax
+				\addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
+				\else % #1 is not \relax
+				\addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
+				\fi
+				\kern2pt\hrule\kern2pt
+			}
+		}{% \end{breakablealgorithm}
+		\kern2pt\hrule\relax %\@fs@post% for \@fs@ruled
+	\end{center}
+}
+\makeatother
+
+\usepackage{amsmath} % 支持数学符号
+\usepackage{amssymb}
+\usepackage{algorithmicx}
+%处理数学公式中和黑斜体
+\usepackage{latexsym,bm}
+%定义书写公式环境
+\usepackage{cases}
+%一些特殊符号例如：※√
+\usepackage{pifont}
+
+% 数学命令
+\makeatletter
+\newcommand\dif{%  % 微分符号
+	\mathop{}\!%
+	\ifthu@math@style@TeX
+	d%
+	\else
+	\mathrm{d}%
+	\fi
+}
+\makeatother
+% 表格中支持跨行
+\usepackage{multirow}
+
+% 固定宽度的表格。
+\usepackage{tabularx}
+
+% 跨页表格
+\usepackage{longtable}
+%给字母加粗
+\usepackage[T1]{fontenc}
+
+\usepackage{amsthm}
+% 量和单位
+\usepackage{siunitx}
+
+\newcommand{\formatmain}{
+	\setlength{\parskip}{0em}
+	\renewcommand{\baselinestretch}{1.53}
+	\interfootnotelinepenalty=10000}
+%三线表
+\usepackage{booktabs}
+
+%页眉页脚
+\usepackage{fancyhdr}
+%三线表
+\usepackage{threeparttable}
+% 中英文摘要和关键字
+%这里标题的设置是黑体 三号 居中
+%新罗马字体
+\newcommand{\romann}{\CJKfontspec{TIMES.TTF}\selectfont}
+\newtheorem{theorem}{定理}
+%参考文献生成规则
+\usepackage[
+backend=biber,
+style=gb7714-2015,
+gbalign=gb7714-2015,
+gbnamefmt=lowercase,
+gbpub=false,
+doi=false,
+url=false,
+eprint=false,
+isbn=false,
+]{biblatex}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black,
+	urlcolor=black
+}
+
