@@ -1,0 +1,27 @@
+\makeatletter
+\newcommand\ackname{\heiti\zihao{3}致\hspace{2em}谢}
+
+
+\newenvironment{acknowledgements}{%
+	\if@twocolumn
+	\section*{\ackname}%
+	\else
+	\small
+	\vspace*{12pt} % 标题前空一行
+	\begin{center}%
+		{\bfseries \ackname\vspace{-.5em}\vspace{\z@}}%
+	\end{center}%
+	\vspace{12pt} % 标题前空一行
+	\quotation
+	\songti\zihao{-4} % 设置宋体、小四
+	\setlength{\parskip}{0pt} % 段前段后间距为0
+	\setlength{\baselineskip}{20pt} % 行距20磅
+	\fi}
+{\if@twocolumn\else\endquotation\fi}
+
+\makeatother
+
+\begin{acknowledgements}
+	%把下面这个\lipsum[1]删了然后写你的致谢
+	\lipsum[1]
+\end{acknowledgements}

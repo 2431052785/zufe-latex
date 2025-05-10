@@ -1,0 +1,58 @@
+% 自定义下划线命令
+\newcommand\dunderline[3][-1pt]{{%
+		\setbox0=\hbox{#3}%
+		\ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+
+% 生成封面
+\begin{titlepage}
+	\makeatletter
+	% 校内毕设封面顶部间距
+	\vspace*{-20mm}
+	
+	\centering
+	
+	\hspace{100mm}\includegraphics[width=3cm]{figures/logo.png}\\
+	\hspace{100mm}\includegraphics[width=5cm, height=1cm]{figures/name.png}
+	\vspace*{10mm}
+	\begin{center}
+  		\zihao{1}\textbf{\ziju{0.12}\songti{本\hspace{5mm}科\hspace{5mm}生\hspace{5mm}毕\hspace{5mm}业\hspace{5mm}论\hspace{5mm}文（设计）}}
+		
+		\vspace{20mm}
+		
+		\xiaoer\textmd{\heiti{题目：}\thesisname}
+		
+		\vspace{5mm}
+		%判断是否有副标题
+		\ifx\ensubtitle\undefined\else
+		%如果有副标题
+		\begin{spacing}{1.2}
+			\sanhao\selectfont{\textmd{\kaishu{-----}\subtitle}}
+		\end{spacing}
+		\fi
+		\vspace{30mm}
+		
+		\flushleft
+		\makeatletter
+
+		\makeatother
+		
+		\begin{spacing}{1.8}
+			\hspace{27mm}\songti\zihao{3}\selectfont{学生姓名：\dunderline[-10pt]{1pt}{\makebox[78mm][c]{\studentname}}}
+			
+			\hspace{27mm}\songti\zihao{3}\selectfont{学\hspace{11mm}号：\dunderline[-10pt]{1pt}{\makebox[78mm][c]{\studentid}}}
+			
+			\hspace{27mm}\songti\zihao{3}\selectfont{指导教师：\dunderline[-10pt]{1pt}{\makebox[78mm][c]{\advisor}}}
+			
+			\hspace{27mm}\songti\zihao{3}\selectfont{所在学院：\dunderline[-10pt]{1pt}{\makebox[78mm][c]{\deptName}}}
+			
+			\hspace{27mm}\songti\zihao{3}\selectfont{专业名称：\dunderline[-10pt]{1pt}{\makebox[78mm][c]{\major}}}
+			
+			\hspace{27mm}\songti\zihao{3}\selectfont{班\hspace{11mm}级：\dunderline[-10pt]{1pt}{\makebox[78mm][c]{\className}}}
+		\end{spacing}
+
+			
+		\vspace{25mm}
+		\centering
+		\zihao{4}\ziju{0.5}{\thesisdate}
+	\end{center}
+\end{titlepage}
